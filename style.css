@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container{
+   max-width: 1000px;
+    display: flex;
+}
+h2{
+    font-size: 60px;
+}
+
+h4{
+    font-size: 40px;
+}
+
+.small-container{
+    min-width: 300px;
+}
+
+.menu2{
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+/* Navigation Bar */
+
+@media screen and (max-width: 700px){
+    .menu2{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .col-links:hover{
+        background-color: rgb(204, 203, 203);
+        width: 100%;
+        padding-left: 1.5rem;
+        transition: 0.8s;
+    }
+    .col-links{
+        align-self: flex-start;
+        width: 100%;
+        cursor: pointer;
+        padding: 1.2rem 0;
+       
+    }
+
+    .hideLinks{
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    
+    .hamburger-lines{
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 17px;
+        right: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #0e2431;
+        
+    }
+    .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+    
+}
+.showLinks{
+    height: 17rem;
+}
+
+.logo{
+    min-width: 70px;
+    align-self: center;
+    height: 100px;
+    background: url(Images/blender_community_badge_orange.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+nav{
+    width: 100%;
+    background-color: white;
+    border: solid red 1px;
+}
+
+.navbar{
+    margin: auto;
+    display: flex;
+    justify-content: space-between; 
+    max-width: 1000px;
+    min-height: 100px;
+}
+
+
+.menu{
+    display: flex;  
+    align-items: center;
+    flex-wrap:wrap ;
+}
+
+.menu>li{
+    padding: 0 30px;
+    list-style: none;
+}
+
+
+a{
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* End of Navigation Bar */
+
+/* Start of page 1 */
+main{
+    min-height: 90vh;
+    display: flex;
+    background: url(Images/tim-chow-9IcKPSQ9G5Q-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    background-position: center 70%;
+}
+
+main .container{
+    width: 35%;
+    min-width: 300px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-heading{
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    justify-content: center;
+    width: 30%;
+    min-width: 300px;
+    gap: 3rem;
+    text-align: center;
+}
+
+.main-heading button{
+    width: 300px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    align-self: center;
+}
+/* End of Start of page 1 */
+
+/* Start of page 2 */
+.page2{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 5rem 1rem;
+    
+}
+.paragraph{
+    max-width: 400px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 700px;
+    min-width: 300px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.page2 .small-container{
+    min-width: 300px;
+    min-height: 400px;
+    position: relative;
+}
+
+.cover-image{
+    height: 85%;
+    border: solid #aec1c9 5px;
+}
+
+.image1{
+    background: url(Images/adrian-motroc-DhIarbBYCWU-unsplash.jpg);
+    background-size: cover;
+    background-position: center 40%;
+    
+}
+.image2{
+    background: url(Images/mediamodifier-W7AyAs7azHc-unsplash.jpg);
+    background-size: cover;
+    background-position: center 100%;
+}
+.image3{
+    background: url(Images/toa-heftiba-a9pFSC8dTlo-unsplash.jpg);
+    background-size: cover;
+    background-position: center 100%;
+}
+
+.card{
+    position: absolute;
+    width: 250px;
+    height: 180px;
+    margin-top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 100;
+    border: black solid 2px;
+}
+
+.read-more{
+    height: 40px;
+    border: none;
+}
+
+.wrapper{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 75%;
+   background-color: white;
+}
+
+
+/* End of page 2 */
+
+/* Start of page 3 */
+.page3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+.page3>img{
+    width: 50%;
+    min-width: 300px;
+    height: auto;
+}
+
+
+.grid-container{
+    display:grid;
+    width: 50%;  
+    min-width: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 50%));
+}
+
+
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    border: solid gray 2px;
+    min-height: 300px;
+}
+
+.cat-para{
+    font-size: 15px;
+    max-width: 15rem;
+}
+
+.icon{
+    height: 100px;
+    width: auto;
+}
+
+
+
+/* End of page 3 */
+
+
+/* Start of page 4 */
+.page4{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   padding: 5rem 0;
+}
+.page4-container{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.page4 img{
+    min-width: 300px;
+    width: 40%;
+   z-index: 100;
+}
+
+.blue-side{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: aquamarine;
+    min-height: 400px;
+
+}
+/* .blue-side h4{
+    width: 50%;
+    
+} */
+
+.open-hours{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 2rem;
+    min-width: 300px;
+}
+.open-hours>button{
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border: solid rgb(199, 199, 199) 2px;
+}
+.open-hours>ul{
+   padding-left: 1rem;
+}
+.open-hours>h2{
+    font-size: 2rem;
+}
+
+
+/* End of page 4 */
+
+/* Start of page 5  */
+.page5{
+    background: url(Images/pawel-czerwinski-lWBZ01XRRoI-unsplash.jpg);
+    background-size: cover;
+    background-position: center 50%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.page5 .container{
+    display: flex;
+    width: 50rem;
+    justify-content: flex-start;
+}
+
+.page5 .small-container{
+    width: 40%;
+    min-width: 300px;
+    background-color:rgb(38, 244, 175);
+    color: white;
+    display: flex;
+    padding: 2.5rem ;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.page5 button{
+    width: 10rem;
+    height: 50px;
+    border: solid white 2px;
+    background-color: rgb(38, 244, 175);
+    color: white;
+}
+.page5 h2{
+    font-size: 2.5rem
+}
+
+
+.price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid white 2px;
+    padding-bottom:0.5rem ;
+}
+/* End of page 5  */
+
+/*Start of footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer .small-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    text-align: center;
+    gap: 1rem;
+    padding-bottom: 3rem;
+}
+
+footer h5{
+    font-size: 20px;
+}
+
+
+
+
+/* End of footer */
+ 
